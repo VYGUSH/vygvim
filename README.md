@@ -1,7 +1,39 @@
-# vygvim
-Сustom assembly NVIM for vygush
------------
-## Первичная настройка
+# VygVim - сustom assembly NVIM for vygush
+
+## Старт
+Для начала сделайте бэкап текущего конфига:
+```bash
+mv ~/.config/nvim{,.bak}
+```
+Дополнительно:
+```bash
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
+
+Склонируйте VygVim сборку:
+```bash
+git clone https://github.com/VYGUSH/vygvim ~/.config/nvim
+```
+
+Чтобы после добавить сборку в свой репозиторий:
+```bash
+rm -rf ~/.config/nvim/.git
+```
+
+Запускайте!
+```bash
+nvim
+```
+
+## Состав
+- Пакетный менеджер - `Lazy`
+- Управление файловой системой - `NeoTree`
+
+
+## Инфо как это собиралось
+### Первичная настройка
 
 1. Установка (Mac OS)
 ```bash
@@ -69,7 +101,7 @@ require('core.plugins')
 ```
 
 
-## Плагины
+### Плагины
 1. **NeoTree** (https://github.com/nvim-neo-tree/neo-tree.nvim) в `plugins.lua`
 ```bash
 {
