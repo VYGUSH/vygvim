@@ -140,3 +140,26 @@ require("neo-tree").setup({})
 ```
 `Shift + H` - показать все файлы/папки
 
+2. **Markview.nvim** (https://github.com/OXY2DEV/markview.nvim) в `plugins.lua`
+```bash
+{
+    "OXY2DEV/markview.nvim",
+    lazy = false,      -- Recommended
+    -- ft = "markdown" -- If you decide to lazy-load anyway
+
+    dependencies = {
+        -- You will not need this if you installed the
+        -- parsers manually
+        -- Or if the parsers are in your $RUNTIMEPATH
+        "nvim-treesitter/nvim-treesitter",
+
+        "nvim-tree/nvim-web-devicons"
+    }
+},
+```
+
+Потребуется открыть **lazy** `:Lazy`для проверки работоспособности плагина
+
+Может возникнуит исколючение по недостающему модулю, необходимо догрузить:
+>В командной строке **nvim**: `:TSInstall html`
+
