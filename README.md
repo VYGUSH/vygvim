@@ -30,6 +30,7 @@ nvim
 ## Состав
 - Пакетный менеджер - `Lazy`
 - Управление файловой системой - `NeoTree`
+- Работа с файлами Markdown (Режим просмотра/редактора) - `Markview`
 
 
 ## Инфо как это собиралось
@@ -140,7 +141,7 @@ require("neo-tree").setup({})
 ```
 `Shift + H` - показать все файлы/папки
 
-2. **Markview.nvim** (https://github.com/OXY2DEV/markview.nvim) в `plugins.lua`
+2. **Markview** (https://github.com/OXY2DEV/markview.nvim) в `plugins.lua`
 ```bash
 {
     "OXY2DEV/markview.nvim",
